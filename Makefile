@@ -6,7 +6,7 @@
 #    By: pclement <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/20 16:13:50 by pclement          #+#    #+#              #
-#    Updated: 2017/12/21 18:47:46 by pclement         ###   ########.fr        #
+#    Updated: 2017/12/21 18:51:19 by pclement         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,7 @@ $(NAME): $(SRC) $(OBJ)
 
 $(%.o):
 	gcc $(FLAGS) %.c
+	gcc $(FLAGS) libft/%.c
 
 clean:
 	rm -f $(OBJ)
